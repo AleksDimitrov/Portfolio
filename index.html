@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> -->
+
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+  </head>
+<body class="w3-black">
+
+  <!-- <div id="mydiv"></div>
+
+    <script type="text/babel">
+      function Hello() {
+        return <h1>Hello World!</h1>;
+      }
+
+      const container = document.getElementById('mydiv');
+      const root = ReactDOM.createRoot(container);
+      root.render(<Hello />)
+    </script> -->
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <!-- <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" style="width:100%"> -->
+  <img src="./images/LinkedInPFP.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-puzzle-piece w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:20% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
+    <a href="#projects" class="w3-bar-item w3-button" style="width:20% !important">PROJECTS</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:20% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:20% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Aleksander Dimitrov.</h1>
+    <p>Full Stack Software Developer.</p>
+    <!-- <img src="https://www.w3schools.com/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108"> -->
+    <img src="./images/LinkedInPFP.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey" id="about" style='height:100%'>
+    <h2 class="w3-text-light-grey">Aleksander Dimitrov</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I am a Full Stack software developer. I use AWS, HTML, CSS, JS, and PHP on a regular basis. I graduated from the University of Arizona with a double-major in Computer Science (BS in CS) and Information Science & Technology (BS in ISTA). I am a detail-oriented quick learner looking forward to problem-solving and engaging in challenging projects as part of a successful team of professionals. I am enthusiastic about lifelong learning because new obstacles are new opportunities for growth.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Python</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    </div>
+    <p class="w3-wide">Java</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    </div>
+    <p class="w3-wide">HTML/CSS/JS</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    </div>
+    <p class="w3-wide">C#/.NET</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    </div>
+    <p class="w3-wide">Amazon Web Services</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    </div>
+    <p class="w3-wide">Microsoft Azure</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+    <p class="w3-wide">React.js</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+    <p class="w3-wide">Node.js</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+    <p class="w3-wide">PHP</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+    <p class="w3-wide">MySQL/SQL</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    
+    <!-- <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div> -->
+
+    <h3 class="w3-padding-16 w3-text-light-grey">My Resume</h3>
+
+    <!-- <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey"> -->
+    <div style='position:relative; top:0; left:0; height:100vh; width:100%'>
+      <embed src="./AleksanderD_ResumeFullV8.pdf" width='100%' height='100%' type='application/pdf'>
+    </div>
+
+    <script>
+    function openNewPage() {
+        window.open("./AleksanderD_ResumeFullV8.pdf");
+      }
+    </script>
+
+    <!-- <div>
+      <button onclick="openNewPage()">Open In New Page</button>
+    </div> -->
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section" onclick="openNewPage()">
+      Open In New Page
+    </button>
+
+    <!-- <i class="fa fa-download"></i> Download Resume -->
+
+    
+    <!-- Grid for pricing tables -->
+    <!-- <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">5GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div> -->
+
+      <!-- <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div> -->
+    <!-- End Grid/Pricing tables -->
+    <!-- </div> -->
+    
+    <!-- Testimonials -->
+    <!-- <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
+    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+    <p>John Doe saved us from a web disaster.</p><br>
+    
+    <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+    <p>No one is better than John Doe.</p> -->
+  <!-- End About Section -->
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("slides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length} ;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+
+    function showDivs2(n) {
+      var i;
+      var x = document.getElementsByClassName("slides");
+      for (i = 0; i < x.length; i++) {
+        //x[i].style.visibility = "hidden";
+        x[i].style.display = "none";
+      }
+      //x[n-1].style.visibility = "visible";
+      x[n-1].style.display = "block";
+    }
+  </script>
+
+  <div class="w3-content w3-display-container" id="projects">
+    <h2 class="w3-text-light-grey">My Projects</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    
+
+    <div class="w3-center" style="width:100%">
+      <button class="w3-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-right" onclick="plusDivs(+1)">&#10095;</button>
+
+      <span class="w3-button w3-border" onclick="showDivs2(1)"></span>
+      <span class="w3-button w3-border" onclick="showDivs2(2)"></span>
+      <span class="w3-button w3-border" onclick="showDivs2(3)"></span>
+      <span class="w3-button w3-border" onclick="showDivs2(4)"></span>
+      <span class="w3-button w3-border" onclick="showDivs2(5)"></span>
+
+      <!-- <div class="w3-card-4">
+        <img src="./project_images/PSG1.jpg" alt="Alps">
+        <div class="w3-container w3-center">
+        <p>Proto Station Gamma</p>
+        </div>
+      </div> -->
+      
+    </div>
+    
+    <div class="slideshow">
+      <img class="slides" src="./project_images/PSG2.png" style="display: block">
+      <!-- <img class="slides" src="./project_images/AW1.jpg" style="visibility: hidden; position: absolute; top:25%;"> -->
+      <img class="slides" src="./project_images/AW2.png" style="display: none;">
+      <img class="slides" src="./project_images/OB2.png" style="display: none;">
+      <img class="slides" src="./project_images/MM2.png" style="display: none;">
+      <img class="slides" src="./project_images/solar2.png" style="display: none;">
+    </div>
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-16 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Photos I Like</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <!-- <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%"> -->
+        <img src="./images/mountain-winter.jpg" style="width:100%">
+        <!-- <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%"> -->
+        <img src="./images/Granite_Falls_WA_321.jpg" style="width:100%">
+        <!-- <img src="https://www.w3schools.com/w3images/sailboat.jpg" style="width:100%"> -->
+        <img src="./images/mt-rainier-paradise-1.jpg" style="width:100%">  
+    </div>
+
+      <div class="w3-half">
+        <!-- <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%"> -->
+        <img src="./images/space_needle1.jpg" style="width:100%">
+
+        <!-- <img src="https://www.w3schools.com/w3images/chef.jpg" style="width:100%"> -->
+        <!-- <img src="./map_300dpi_27.41x19.16_inv4111c-scaled.jpg" style="width:100%"> -->
+
+        <!-- <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%"> -->
+        <img src="./images/leavenworth-washington-state.jpg" style="width:100%">
+
+        <!-- <img src="https://www.w3schools.com/w3images/p6.jpg" style="width:100%"> -->
+        <img src="./images/bear.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-16 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Seattle, US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +1 520-235-7422</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: aleksander.dimitrov206@gmail.com</p>
+    </div>
+    <!-- <br> -->
+    <!-- <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form> -->
+  </div>
+
+<script>
+  function openLinkedIn() {
+    window.open("https://www.linkedin.com/in/adimitrov500");
+  }
+
+  function openGitHub() {
+    window.open("https://github.com/AleksDimitrov");
+  }
+</script>
+  
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i> -->
+  <i class="fa fa-linkedin w3-hover-opacity" onclick="openLinkedIn()"></i>
+  <i class="fa fa-github w3-hover-opacity" onclick="openGitHub()"></i>
+ <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
+ <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> 
+ <!-- End footer -->
+</footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
