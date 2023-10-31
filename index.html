@@ -71,7 +71,7 @@
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey" id="about" style='height:100%'>
     <h2 class="w3-text-light-grey">Aleksander Dimitrov</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <hr style="width:350px" class="w3-opacity">
     <p>I am a Full Stack software developer. I use AWS, HTML, CSS, JS, and PHP on a regular basis. I graduated from the University of Arizona with a double-major in Computer Science (BS in CS) and Information Science & Technology (BS in ISTA). I am a detail-oriented quick learner looking forward to problem-solving and engaging in challenging projects as part of a successful team of professionals. I am enthusiastic about lifelong learning because new obstacles are new opportunities for growth.
     </p>
     <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
@@ -120,7 +120,7 @@
 
     <!-- <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey"> -->
     <div style='position:relative; top:0; left:0; height:100vh; width:100%'>
-      <embed src="./AleksanderD_ResumeFullV8.pdf" width='100%' height='100%' type='application/pdf'>
+      <embed src="./AleksanderD_Resume.pdf" width='100%' height='100%' type='application/pdf'>
     </div>
 
     <button class="w3-button w3-light-grey w3-padding-large w3-section" onclick="openResume()">
@@ -131,8 +131,8 @@
   </div>
 
   <div class="w3-content w3-display-container" id="projects">
-    <h2 class="w3-text-light-grey">My Projects</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <h2 class="w3-text-light-grey">My Recent Projects</h2>
+    <hr style="width:300px" class="w3-opacity">
 
     <div class="w3-center" style="width:100%">
       <button class="w3-left" onclick="plusDivs(-1)">&#10094;</button>
@@ -155,20 +155,22 @@
     
     <div class="slideshow">
       <img class="slides" src="./project_images/PSG2.png" style="display: block">
-      <p>https://lniemann.itch.io/proto-station-gamma</p>
       <img class="slides" src="./project_images/AW2.png" style="display: none;">
-      <p>https://lniemann.itch.io/alaras-workshop</p>
       <img class="slides" src="./project_images/OB2.png" style="display: none;">
-      <p>https://thetruegoldking.itch.io/one-bolt</p>
       <img class="slides" src="./project_images/MM2.png" style="display: none;">
-      <p>https://github.com/AleksDimitrov/Mastermind.git</p>
       <img class="slides" src="./project_images/solar2.png" style="display: none;">
-      <p>https://solar-37ce.onrender.com/</p>
+    </div>
+    <div style="text-align: center">
+      <a href="https://lniemann.itch.io/proto-station-gamma" class="captions">https://lniemann.itch.io/proto-station-gamma</a>
+      <a href="https://lniemann.itch.io/alaras-workshop" class="captions w3-center" style="display: none;">https://lniemann.itch.io/alaras-workshop</a>
+      <a href="https://thetruegoldking.itch.io/one-bolt" class="captions w3-center" style="display: none;">https://thetruegoldking.itch.io/one-bolt</a>
+      <a href="https://github.com/AleksDimitrov/Mastermind.git" class="captions w3-center" style="display: none;">https://github.com/AleksDimitrov/Mastermind.git</a>
+      <a href="https://solar-37ce.onrender.com/" class="captions w3-center" style="display: none;">https://solar-37ce.onrender.com/</a>
     </div>
   </div>
   
   <!-- Portfolio Section -->
-  <div class="w3-padding-16 w3-content" id="photos">
+  <div class=" w3-content" id="photos">
     <h2 class="w3-text-light-grey">Photos I Like</h2>
     <hr style="width:200px" class="w3-opacity">
 
@@ -191,14 +193,12 @@
   </div>
 
   <!-- Contact Section -->
-  <div class="w3-padding-16 w3-content w3-text-grey" id="contact">
+  <div class="w3-content w3-text-grey" id="contact">
     <h2 class="w3-text-light-grey">Contact Me</h2>
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Seattle, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +1 520-235-7422</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: aleksander.dimitrov206@gmail.com</p>
+      <img id="c0" src="./images/C0.png">
     </div>
     <!-- <br> -->
     <!-- <p>Let's get in touch. Send me a message:</p>
@@ -223,8 +223,20 @@
   <i class="fa fa-snapchat w3-hover-opacity"></i>
   <i class="fa fa-pinterest-p w3-hover-opacity"></i>
   <i class="fa fa-twitter w3-hover-opacity"></i> -->
+  <br>
   <i class="fa fa-linkedin w3-hover-opacity" onclick="openLinkedIn()"></i>
   <i class="fa fa-github w3-hover-opacity" onclick="openGitHub()"></i>
+
+  <div style="padding-bottom: 100px" class="w3-right" id="backToTop">
+  <button style="background-color: black; color: white; border-color: black" onclick="goToTop()" title="Go to top">
+    <div>
+      <i class="fa fa-angle-up"></i>
+    </div>
+    <div>
+      <p style="font-size: 14px">Back to Top</p>
+    </div>
+  </button>
+  </div>
  <!-- End footer -->
 </footer>
 
